@@ -13,5 +13,7 @@ Modalidad: Presencial
 
 # Recursos
 https://eduv.tecazuay.edu.ec/
+
 https://www.python.org/
+
 https://code.visualstudio.com/
