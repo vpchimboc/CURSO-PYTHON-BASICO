@@ -3,10 +3,7 @@
 
 # Definición
 """
-El tipo set en Python es la clase utilizada 
-por el lenguaje para representar los conjuntos. 
-Un conjunto es una colección desordenada de elementos únicos, 
-es decir, que no se repiten.
+El tipo set en Python es la clase utilizada por el lenguaje para representar los conjuntos. Un conjunto es una colección desordenada de elementos únicos, es decir, que no se repiten.
 """
 
 my_set = set()

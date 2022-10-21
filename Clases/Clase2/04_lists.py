@@ -3,9 +3,7 @@
 
 # Definición
 """
-Las listas en Python son un tipo contenedor, compuesto, 
-que se usan para almacenar 
-conjuntos de elementos relacionados del mismo tipo o de tipos distintos.
+Las listas en Python son un tipo contenedor, compuesto, que se usan para almacenar conjuntos de elementos relacionados del mismo tipo o de tipos distintos.
 """
 
 my_list = list()

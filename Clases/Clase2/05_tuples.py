@@ -2,12 +2,7 @@
 ### Tuples ###
 
 # Definición
-"""En Python, una tupla es un conjunto ordenado 
-e inmutable de elementos 
-del mismo o diferente tipo. 
-Las tuplas se representan escribiendo 
-los elementos entre paréntesis y separados por comas. 
-Una tupla puede no contener ningún elemento, es decir, ser una tupla vacía.
+"""En Python, una tupla es un conjunto ordenado e inmutable de elementos del mismo o diferente tipo. Las tuplas se representan escribiendo los elementos entre paréntesis y separados por comas. Una tupla puede no contener ningún elemento, es decir, ser una tupla vacía.
 """
 my_tuple = tuple()
 my_other_tuple = ()

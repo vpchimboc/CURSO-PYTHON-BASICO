@@ -35,21 +35,21 @@ print(e)
 # División
 
 language_slice = language[1:3]
-print("language[1:3]"+language_slice)
+print(language_slice)
 
 language_slice = language[1:]
-print('language[1:]'+language_slice)
+print(language_slice)
 
 language_slice = language[-2]
-print("language[-2]"+language_slice)
+print(language_slice)
 
-language_slice = language[0:6:3]
-print("language[0:6:3] "+language_slice)
+language_slice = language[0:6:2]
+print(language_slice)
 
 # Reverse
 
 reversed_language = language[::-1]
-print("Reverse "+reversed_language)
+print(reversed_language)
 
 # Funciones del lenguaje
 

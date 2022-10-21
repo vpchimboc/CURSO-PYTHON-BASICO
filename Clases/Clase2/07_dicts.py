@@ -2,11 +2,7 @@
 ### Dictionaries ###
 
 # Definición
-"""
-Los diccionarios en Python nos permiten 
-almacenar una serie de mapeos entre dos conjuntos de 
-elementos, llamados keys and values (Claves y Valores)
-"""
+
 my_dict = dict()
 my_other_dict = {}
 
