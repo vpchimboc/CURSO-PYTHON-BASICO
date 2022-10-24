@@ -1,8 +1,10 @@
 class Persona:
+#Constructor
     def __init__(self, nombre, edad,sexo):
         self.nombre=nombre
         self.edad=edad
         self.sexo=sexo
+   #metodos.- definen una acción o comportamiento
     def datosPersonales(self):
         print(f"El nombre de la persona es: {self.nombre}")
         print(f"La edad de la persona es: {self.edad}")
