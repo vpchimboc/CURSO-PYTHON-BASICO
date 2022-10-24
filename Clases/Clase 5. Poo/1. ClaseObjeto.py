@@ -7,6 +7,7 @@ Modelo de diseño y desarrollo de Programa
 #Como crear una clase
 #La primera letra debe de ser en Mayusculas
 class Gelatina:
+      
       #Esta clse define el estado y el comportamiento de una Gelatina
     #Atributos de clase
     nombre="" 

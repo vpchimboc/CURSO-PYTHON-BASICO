@@ -11,15 +11,21 @@ class Coche:
         self._kilometros=kilomentros
         self.anio=anio
         print(f"Se ha creado un auto {self.__marca}, con {self._kilometros} kilometros")
-    #Metodo set
+    #Metodo get
     @property
     def kilometros(self):
         return f"El Kilometro es {self._kilometros}"
-
-     #Metodo get
+    @property
+    def marca(self):
+        return self.__marca
+     #Metodo set
     @kilometros.setter
     def kilometros(self,kilometros):
       self._kilometros=kilometros
+    @marca.setter
+    def marca(self,marca):
+        self.__marca=marca
+    
 
     def arrancar(self, arrancamos):
         self.enmarcha=arrancamos
@@ -38,4 +44,6 @@ print(micoche.arrancar(True))
 ##acceder a los metodos accesores
 print(micoche.kilometros)
 micoche.kilometros=400
+micoche.anio=1991
+print(micoche.anio)
 print(str(micoche))

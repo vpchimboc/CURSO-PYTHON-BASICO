@@ -21,9 +21,13 @@ miPersona.datosPersonales()
 print("##############")
 #Herencia
 class Empleado(Persona):
-    def __init__(self, nombre, edad, apellido, sexo, departamento):
+    def __init__(self, nombre, edad, apellido, sexo,departamento,salario,vacaciones):
         super().__init__(nombre, edad, apellido, sexo)
         self.departamento=departamento
+        self.salario=salario
+        self.vacaciones=vacaciones
+    def __str__(self):
+        return f"Departamento {self.departamento}, dias de vacaciones {self.vacaciones}, el salario es {self.salario}"
 
     def datosEmpleado(self,vacaciones,salario):
         super().datosPersonales()
@@ -31,6 +35,7 @@ class Empleado(Persona):
         print(f"Sus días de vacaciones son: {vacaciones}")
         print(f"Su salario es: {salario}")
 
-miEmpleado=Empleado("Paulina",31,"Coronel","Femenino","Sistemas")
+miEmpleado=Empleado("Paulina",31,"Coronel","Femenino","Sistemas",560,24)
 #miEmpleado.datosPersonales()
 miEmpleado.datosEmpleado(30,250)
+print(str(miEmpleado))

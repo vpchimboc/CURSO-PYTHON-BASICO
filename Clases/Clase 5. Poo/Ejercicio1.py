@@ -25,7 +25,10 @@ Observa el siguiente instructivo, donde se explicara el porqué, el cómo y el p
 
  #2. Cree la clase llamada Persona con su constructor y los dos atributos: nombre y edad, recuerde que serán ingresados por teclado. Además, defina el método para imprimir el nombre y la edad.
 
- 
+class Persona:
+    nombre=""
+    
+
 
  #3. Crea la clase Ciudadano y entre paréntesis pase el nombre de la clase de la cual hereda. Dentro de la clase defina el constructor, use la función super().__init__() para heredar los atributos de la clase Persona y debajo coloque el atributo depósito que será ingresado por teclado. 
 

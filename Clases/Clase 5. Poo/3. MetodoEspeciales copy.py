@@ -15,5 +15,6 @@ class Coche:
 
 
 michoe=Coche("Audi", 200, 1995)
+print(str(michoe))
 del(michoe)
 print(str(michoe))
