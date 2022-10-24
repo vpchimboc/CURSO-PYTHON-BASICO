@@ -9,7 +9,10 @@ stop.- valor entero, que indica el número hasta el cual se va a generar la secu
 step.- Es un valor entero, que indica el incremento o decremento de la sucesión numérica entre un número y el siguiente
 """
 print(list(range(10)))
+
 print(list(range(2,10)))
+
 print(list(range(2,10,2)))
+
 print(list(range(0,10,3)))
 

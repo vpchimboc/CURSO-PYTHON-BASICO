@@ -18,4 +18,7 @@ Requerimientos
 - La tabla debe contener las multiplicaciones que van desde el 0 hasta el 10
 
 """
-
+print("Tabla de Multiplicar")
+val=int(input("Ingrese el numeor de la Tabla que requiere: "))
+for i in range(1,11):
+    print(val,"*",i,"=",val*i)

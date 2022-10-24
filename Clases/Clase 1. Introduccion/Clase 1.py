@@ -141,6 +141,7 @@ print(verdadero_falso,type(verdadero_falso))
 """7. Entrada de datos desde teclado
 Permite que el usuario pueda interactuar con el programa
 """
+
 print("Entrada de datos")
 
 palabra=input("Intoduce una palabra: ")
@@ -169,7 +170,7 @@ if Condicion lógica:
    Instrucción
 
 """
-num_uno=5
+num_uno=10
 if num_uno==10:
-    print("El numero es cinco")
+    print("El numero es diez")
 print("Fin.")

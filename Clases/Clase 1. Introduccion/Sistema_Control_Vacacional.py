@@ -38,8 +38,9 @@ elif clave_departamento == 3:
         print("El empleado ", nombre_empleado, " tiene derecho a 30 días de vacaciones.")
     else:
         print("El empleado ", nombre_empleado, " aún no tiene derecho a vacaciones.")
+
 else:
-    print("La clave de departamento no existe, vuelve a intentarlo.")
+    print("La calve de departamento no existe, vuelve a intentarlo.")
 
 
 
