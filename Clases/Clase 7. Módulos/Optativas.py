@@ -1,0 +1,2 @@
+def imprimir():
+    print("Hola")
