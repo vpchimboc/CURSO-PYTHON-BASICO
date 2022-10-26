@@ -20,7 +20,6 @@ colores.values()
 
 #items(): Genera una lista en clave-valor de los registros del diccionario
 colores.items()
-
 for c in colores:
     print(colores[c])
 

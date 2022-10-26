@@ -31,7 +31,7 @@ class Punto:
 
 class Rectangulo:
     
-    def __init__(self, pInicial=Punto(), pFinal=Punto()):
+    def __init__(self, pInicial, pFinal):
         self.pInicial = pInicial
         self.pFinal = pFinal
         
@@ -48,7 +48,9 @@ class Rectangulo:
         self.altura = abs(self.pFinal.y - self.pInicial.y)
         self.area = self.base * self.altura
         print("El área del rectángulo es {}".format( self.area ) )
-        
+
+    def imprimir(self):
+        print("El área del rectángulo es {}".format( self.area ) )
     
 A = Punto(2,3)
 B = Punto(5,5)
@@ -73,3 +75,4 @@ R = Rectangulo(A, B)
 R.base()
 R.altura()
 R.area()
+R.imprimir()

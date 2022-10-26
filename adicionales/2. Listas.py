@@ -177,11 +177,11 @@ misMascotas.sort(key=lambda x:x.edad)
 #Mostrar despues de ordenar
 print(repr(misMascotas))
 #Mostrar el tamaño de la lista
-print(len(misMascotas))
+print("tamanio",len(misMascotas))
 #Agregar un objeto a la lista
-print(misMascotas.append(Mascota("Lucas",3)))
+misMascotas.append(Mascota("Lucas",3))
 #Insertamos un objeto a la lista
-print(misMascotas.insert(0,Mascota("Lucas",3)))
+misMascotas.insert(0,Mascota("Lucas",3))
 #Mostrar lista
 print(repr(misMascotas))
 #Mostrar el Maximo de la lista

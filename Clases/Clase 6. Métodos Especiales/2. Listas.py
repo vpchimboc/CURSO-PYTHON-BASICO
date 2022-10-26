@@ -22,16 +22,17 @@ especificando los criterios de clasificación.
 """
 prices = [589.36, 237.81, 230.87, 463.98, 453.42] 
 prices.sort() 
-prices
+print(prices)
 personas = ["Veronica","Paulina","Chimbo", "Coronel"] 
-sorted(personas)
-sorted(personas, reverse=True)
-
+personas=sorted(personas)
+print(personas)
+personas=sorted(personas, reverse=True)
+print(personas)
 """función type ()
 Para la función type (), devuelve el tipo de clase de un objeto.
 """
 fam = ["abs", 1.57, "egfrma", 1.768, "mom", 1.71, "dad"]
-type(fam)
+print(type(fam))
 
 """
 método append ()
@@ -40,7 +41,7 @@ final de los elementos que especificó.
 """
 months = ['January', 'February', 'March'] 
 months.append('April') 
-months
+print(months)
 
 """
 método extend ()
@@ -52,13 +53,14 @@ usted será capaz de utilice este método.
 list = [1, 2, 3] 
 list.extend([4, 5, 6]) 
 list
-
+print(list)
 """
 método index ()
 El método index () devuelve el primario Apariencia de el valor requerido.
 """
 months = ['January', 'February', 'March', 'April', 'May'] 
 months.index('March')
+print(months.index('March'))
 
 """
 función max ()
@@ -66,7 +68,7 @@ La función max () devolverá el valor más alto de los valores ingresados.
 """
 prices = [589.36, 237.81, 230.87, 463.98, 453.42] 
 price_max = max(prices) 
-price_max
+print(price_max)
 """
 función min ()
 La función min () devolverá el punto mas bajo valor de los valores ingresados.
@@ -75,13 +77,13 @@ months = ['January', 'February', 'March']
 prices = [238.11, 237.81, 238.91]
 # Identificar el precio minímo
 min_price = min(prices) 
-min_price
+print(min_price)
  # Identificar el indice del precio mínimo
 min_index = prices.index(min_price) 
-min_index
+print(min_index)
  # Identificar el mes con precio mínimo
-min_month = months[1] 
-min_month
+min_month = months[min_index] 
+print(min_month )
 
 """
 función len ()
@@ -90,9 +92,10 @@ La función len () devuelve el número de elementos en una lista especificada.
 
 list_1 = [50.29] 
 list_2 = [76.14, 89.64, 167.28] 
-len(list_1)
-len(list_2)
-
+a=len(list_1)
+b=len(list_2)
+print(a)
+print(b)
 """
 función clear ()
 El método clear () elimina todos los elementos de una lista específica 
@@ -100,7 +103,7 @@ y los convierte en una lista vacía.
 """
 months = ['January', 'February', 'March', 'April', 'May'] 
 months.clear()
-months
+print(months)
 
 """
 función de inserción
@@ -108,7 +111,7 @@ El método insert () inserta lo requerido valor en la posición deseada.
 """
 fruits = ['apple', 'banana', 'cherry']
 fruits.insert(1, "pineapple")
-fruits
+print(fruits)
 
 """
 función count ()
@@ -116,7 +119,7 @@ El método count () devuelve el número de elementos con el deseado valor.
 """
 fruits = ['cherry', 'apple', 'cherry', 'banana', 'cherry']
 x = fruits.count("cherry")
-x
+print(x)
 
 """
 función pop ()
@@ -124,7 +127,7 @@ El método pop () elimina el elemento en la posición requerida.
 """
 fruits = ['apple', 'banana', 'cherry', 'orange', 'pineapple']
 fruits.pop(2)
-fruits
+print(fruits)
 
 """
 función remove ()
@@ -133,14 +136,14 @@ El método remove () elimina el primero ocurrencia del elemento con el especific
 fruits = ['apple', 'banana', 'cherry', 'banana','orange', 'pineapple']
 fruits.remove("banana")
 fruits
-
+print(fruits)
 """
 función reverse ()
 El método reverse () invierte el orden de los elementos.
 """
 fruits = ['apple', 'banana', 'cherry', 'orange', 'pineapple']
 fruits.reverse()
-fruits
+print(fruits)
 
 """
 función copiar ()
@@ -148,7 +151,7 @@ El método copy () devuelve una copia de la lista especificada y crea la nueva l
 """
 fruits = ['apple', 'banana', 'cherry', 'orange']
 x = fruits.copy()
-x
+print(x)
 
 #Lista con objetos
 #Creamos la clase mascota
@@ -180,23 +183,25 @@ y no puede contener declaraciones en una función.
 """
 misMascotas.sort(key=lambda x:x.nombre)
 #Mostrar despues de ordenar
-
+print(misMascotas)
 #Ordenamos por edad
-
+misMascotas.sort(key=lambda x:x.edad)
 #Mostrar despues de ordenar
-
+print(misMascotas)
 #Mostrar el tamaño de la lista
-
+print(len(misMascotas))
 #Agregar un objeto a la lista
-
+misMascotas.append(Mascota("Boby",3))
+print(repr(misMascotas))
 #Insertamos un objeto a la lista en la posicion 2
-
+misMascotas.insert(2,Mascota("Zyra",3))
 #Mostrar lista
-
+print(repr(misMascotas))
 #Mostrar el Maximo de la lista
-
+print(max(misMascotas,key=lambda x:x.edad))
 #Mostrar el Mínimo de la lista
-
+print(min(misMascotas,key=lambda x:x.edad))
 #Eliminar el segundo objeto de la lista
-
+misMascotas.pop(2)
 #Mostrar lista
+print(repr(misMascotas))
