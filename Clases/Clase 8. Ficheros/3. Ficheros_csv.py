@@ -1,4 +1,4 @@
-print("Ficheros CSV")
+print("adicionales/Ficheros CSV")
 """
 Valores separados por comas (comma-separated values)
 Documentación: https://code.tutsplus.com/es/tutorials/how-to-read-and-write-csv-files-in-python--cms-29907
@@ -19,7 +19,7 @@ La función writer() creará un objeto apto para escritura.
 Para iterar los datos sobre las filas, necesitaremos usar 
 la función writerows().
 """
-with open("contactos.csv", "w", newline="\n") as csvfile:
+with open("adicionales/contactos.csv", "w", newline="\n") as csvfile:
     writer = csv.writer(csvfile, delimiter=",")
     for contacto in contactos:
         writer.writerow(contacto)

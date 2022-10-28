@@ -1,27 +1,29 @@
 print("Ficheros de texto")
 #Crear fichero y escribir texto
-texto = "Una línea con texto\nOtra línea con texto"
-fichero = open('fichero.txt','w')  # fichero.txt ruta donde lo crearemos, w indica modo de escritura, write (puntero principio)
+texto = "Hola mundo\nPython con archivos txt"
+fichero = open('nuevo.txt','w')  # fichero.txt ruta donde lo crearemos, w indica modo de escritura, write (puntero principio)
 fichero.write(texto) # escribimos el texto
 fichero.close()  # cerramos el fichero
 
 #Lectura de un fichero de texto
-fichero = open('fichero.txt','r')  # modo lectura read, por defecto ya es r, no es necesario
+fichero = open('nuevo.txt','r')  # modo lectura read, por defecto ya es r, no es necesario
 texto = fichero.read() # lectura completa
 fichero.close()
 #imprimir texto
+print("Nuevo archivo",texto)
 
-fichero = open('fichero.txt','r')
+fichero = open('nuevo.txt','r')
 texto = fichero.readlines() # leer creando una lista de líneas
 fichero.close()
 #imprimir texto
+print(texto)
 
 #Extensión de un fichero de texto
 fichero = open('fichero.txt','a')  # modo a, append, añadir - extender (puntero al final)
 fichero.write('\nOtra línea más abajo del todo')
 fichero.close()
 #Lectura de un fichero no existente
-#fichero = open('fichero_inventado.txt','r')
+#fichero = open('ficherossdfsd.txt','r')
 fichero = open('fichero_inventado.txt','a+')  # Extensión con escritura simultánea, crea fichero si no existe
 
 #Lectura línea a línea
@@ -58,8 +60,9 @@ fichero2.close()
 fichero2 = open('fichero2.txt','r+')  # modo lectura con escritura, puntero al principio por defecto
 texto = fichero2.readlines() # leemos todas las líneas
 texto[2] = "Esta es la línea 3 modificada\n"  # indice menos 1
-texto
+print(texto)
 
 fichero2.seek(0) # Ponemos el puntero al principio
 fichero2.writelines(texto)
 fichero2.close()
+

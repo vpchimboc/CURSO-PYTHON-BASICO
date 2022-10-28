@@ -10,7 +10,7 @@ root.resizable(1,1)#Se modifica en lo ancho y alto
 root.resizable(True,True)#Se modifica en lo ancho y alto
 #Cambiar la imagen
 root.iconbitmap("hola.ico")
-#root.geometry("600x300")#Para asignarle un tamaño a la ventana
+root.geometry("600x300")#Para asignarle un tamaño a la ventana
 #Creamos un Frame
 miFrame=Frame(root)
 #empaquetamos el frame a la ventana principal

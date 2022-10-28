@@ -1,10 +1,11 @@
 #Recorriendo los elementos de una lista utilizando While
 numeros = [1,2,3,4,5,6,7,8,9,10]
 indice = 0
+suma=0
 while indice < len(numeros):
     print(numeros[indice])
     indice+=1
-
+print(".............")
 #Sentencia For (Para) con listas
 for numero in numeros:  # Para [variable] en [lista]
     print(numero)
